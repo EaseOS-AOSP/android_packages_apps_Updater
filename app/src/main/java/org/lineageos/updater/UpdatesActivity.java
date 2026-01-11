@@ -184,7 +184,8 @@ public class UpdatesActivity extends UpdatesListActivity implements UpdateImport
         }
 
         TextView headerTitle = findViewById(R.id.header_title);
-        headerTitle.setText("EaseOS "+ BuildInfoUtils.getBuildVersion());
+        headerTitle.setText(getString(R.string.header_title_text,
+                BuildInfoUtils.getBuildVersion()));
 
         updateLastCheckedString();
 
